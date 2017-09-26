@@ -1,0 +1,205 @@
+﻿/*
+PageAdmin内置框架样式
+*/
+@import url(comm.css);
+@import url(diy.css);
+@import url(/e/css/focus.css);
+
+/*网站基础样式*/
+
+html{-webkit-text-size-adjust:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,th,td,p,blockquote,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0px;padding:0px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display: inline;*zoom:1;}
+body{word-wrap:break-word;text-align:center;font:12px/1.8 "microsoft yahei",Tahoma,Verdana,Arial,\5b8b\4f53;color:#5a5a5a;}
+
+input,select,textarea,button{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+li{list-style:none;*margin-left:-1px}
+.left{float:left}
+.right{float:right}
+.clear{display:block;clear:both;font-size:0px;height:0px;line-height:0px;width:0px;margin:0px;padding:0px;overflow:hidden;}
+a{color:#333333;text-decoration:none;}
+a:hover{text-decoration:underline;color:#fe605f;}
+.page_style{text-align:center;background-color:#ffffff;}
+
+/*顶部及主菜单样式*/
+.top_box{clear:both;border:0 solid #cccccc;width:100%;background:url(images/top_box.jpg) repeat-x center 0;box-shadow:0px 3px 3px rgba(0,0,0,0.1);}
+.top_box_inner{clear:both;overflow:hidden;width:1200px;margin:0px auto;}
+.top_box .logo{float:left;text-align:left;max-width:50%;width:auto;height:60px;padding:13px 0px;}
+.top_box .topcontent{clear:both;overflow:hidden;width:100%;line-height:31px;}
+.toplj_box{clear:both;overflow:hidden;}
+.toplj_box .toplj_left{float:left;}
+.toplj_box .toplj_left span{float:left;background:url(images/top_bg1.png) no-repeat left center;padding:0px 0px 0px 17px;margin-right:15px;}
+.toplj_box .toplj_left a{float:left;margin-right:15px;padding:0px 0px 0px 18px;}
+.toplj_box .toplj_left a.top_a1{background:url(images/top_bg2.png) no-repeat left center;}
+.toplj_box .toplj_left a.top_a2{background:url(images/top_bg3.png) no-repeat left center;}
+.toplj_box .toplj_left a.top_a3{background:url(images/top_bg4.png) no-repeat left center;}
+.toplj_box .toplj_right{float:right;}
+.toplj_box .toplj_right a{display:block;width:160px;height:26px;line-height:26px;margin:2.5px 0px;background:rgb(254,96,95);color:white;transition:all 0.5s ease;}
+.toplj_box .toplj_right a:hover{background:#000;text-decoration:none;}
+
+.menu_box{float:right;text-align:right;height:26px;margin:30px 0px;}
+
+.menu_style_homepage{float:left;text-align:center;}
+.menu_style{float:left;text-align:center;}
+
+a.menu{display:block;color:#555555;text-decoration:none;font-weight:normal;font-size:14px;line-height:26px;padding:0px 10px;margin:0px 10px;}
+a.menu:hover{color:#fff;text-decoration:none;background:rgb(254,96,95);}
+
+.menu_current a.menu{color:#fff;text-decoration:none;background:rgb(254,96,95);}
+
+/*banner样式*/
+.banner{clear:both;z-index:2;min-width:1200px;}
+.smallbanner{clear:both;padding: 0 0 0 0;margin:0 0 0px 0;text-align:left}
+
+
+/*网站主体框架样式*/
+.page_l61 .main_box_style{}
+.page_l61 .main_box_style .main_box_inner{width:auto;margin:0px;}
+.main_box_style{clear:both;position:relative;z-index:3;overflow:hidden;}
+.main_box_style .main_box_inner{clear:both;overflow:hidden;width:1200px;margin:50px auto;}
+
+.main_box_style1{clear:both;margin:0px 0 0 0;overflow:hidden;}
+.main_box_style1 .main_box_inner{width:1200px;margin:50px auto;clear:both;overflow:hidden;}
+.main_box_style1 .main_box_inner_left{float:left;width:150px;margin:0 0px 0 0;text-align:left;}
+.main_box_style1 .main_box_inner_right{float:right;width:990px;margin:0 0 0 0;overflow:hidden;text-align:left;}
+
+.main_box_style2{clear:both;margin:5px 0 0 0;overflow:hidden;background:url(images/lanmu_nav_bg.gif) repeat-y right top;}
+.main_box_style2 .main_box_inner_left{float:left;width:680px;margin:0 10px 0 0;overflow:hidden;text-align:left;}
+.main_box_style2 .main_box_inner_right{float:right;width:210px;margin:0 0 0 0;padding:0 0 0 0;overflow:hidden;text-align:left;border:0 solid #cccccc;border-width:1px 0 0 0;}
+
+
+.main_box_style3{clear:both;margin:5px 0 0 0;overflow:hidden;background:url(images/lanmu_nav_bg.gif) repeat-y left top;}
+.main_box_style3 .main_box_inner_left{float:left;width:210px;margin:0 10px 0 0;overflow:hidden;text-align:left;border:0 solid #cccccc;border-width:1px 0 0 0;}
+.main_box_style3 .main_box_inner_middle{float:left;width:460px;margin:0 0 0 0;overflow:hidden;text-align:left;}
+.main_box_style3 .main_box_inner_right{float:right;width:210px;margin:0 0 0 10px;overflow:hidden;text-align:left;}
+
+
+/*导航样式*/
+.nav_box{clear:both;width:100%;margin:0;}
+.nav_title{clear:both;text-align:center;color:#333333;overflow:hidden;border-bottom:1px #ccc solid;margin:30px 0px 40px 0px;display:none;}
+.nav_sign{clear:both;overflow:hidden;color:rgb(0,0,0); font-size:26px;}
+.nav_sign .s2{font-size:20px;text-transform:uppercase;color:rgb(168,168,168);}
+.nav_sign i{display:block;width:70px;height:3px;background:#000;margin:10px auto 0px auto;}
+
+.nav_more{float:right;font-weight:normal;padding:8px 10px 0 10px;display:none;}
+.nav_more a{font-size:10px;line-height:15px}
+
+.nav_content{text-align:left;}
+
+.nav_menu{clear:both;overflow:hidden;padding:0px;text-align:center;width:100%;margin-top:5px;text-align:center;}
+.nav_menu ul{clear:both;overflow:hidden;display:inline-block;*display:inline;*zoom:1;}
+.nav_menu ul li{clear:both;overflow:hidden;width:145px;height:32px;margin-right:10px;background:url(images/navli.png) no-repeat left center;margin:0px 0px 10px 0px;}
+.nav_menu ul li a{display:block;line-height:32px;text-align:center;font-size:14px;color:#434343;padding:0px 10px;transition:all 0.5s ease;min-width:108px;}
+.nav_menu ul li a:hover{text-decoration:none;color:#fe605f;}
+.nav_menu ul li a.current{text-decoration:none;color:#fe605f;}
+.nav_menu ul li a.current:hover{}
+.nav_menu ul li ul{position:absolute;top:40px;left:50%;z-index:10;}
+.nav_menu ul li ul li{text-align:left;background:#FF8F2E;padding:8px 0px 0px 0px;}
+.nav_menu ul li ul li a{line-height:20px;font-size:12px;background:none;border-bottom:#CCC 1px dotted;color:#FFF;}
+.nav_menu ul li ul li a:hover{color:#cc0000;}
+
+
+.nav_menu ul li ul li ul{padding:0 0 0 0px;}
+.nav_menu ul li ul li span.node{float:left;height:20px;width:15px;cursor:pointer;background:url(images/node_open.gif) no-repeat 0 center;}
+.nav_menu ul li ul li span.node_close{float:left;height:20px;width:15px;cursor:pointer;background:url(images/node_close.gif) no-repeat 0 center;}
+.nav_menu ul li ul li span{float:left;height:20px;width:15px;background:url(images/subnav.gif) no-repeat 0 center;display:none;}
+
+/*模块样式*/
+#module_216{background:url(images/youshi_qvk0.jpg) no-repeat center 0;}/*教学优势*/
+#module_217{background:rgb(94,198,211);}/*名师团队*/
+#module_219{background:url(images/homeimg_8uga.jpg) no-repeat center 0;}/*热报课程*/
+#module_220{background:url(images/ly_09_tx0v.jpg) no-repeat right center;}
+
+.ggwzys .module_sign{color:white;}
+.ggwzys .module_more{color:white;}
+
+.module_box{clear:both;border:0 solid #cccccc;overflow:hidden;}                 /*模块整行布局样式*/
+.module_box_layout_left{float:left;margin:0 0px 50px 0;border:0 solid #cccccc;overflow:hidden;}  /*模块左布局样式*/
+.module_box_layout_right{float:right;margin:0 0 50px 0;border:0 solid #cccccc;overflow:hidden;}   /*模块右布局样式*/
+
+.module_box_inner{clear:both;text-align:left;overflow:hidden;width:1200px;margin:0px auto;padding:90px 0px;}/*模块内层容器样式*/
+.module_box_layout_left .module_box_inner{clear:both;text-align:left;margin:0 10px 0 0;padding:5px 0 5px 0;} /*模块居左时重写内层样式*/
+
+.module_title{clear:both;overflow:hidden;width:100%;position:relative;margin:0px;text-align:center;}
+
+.module_sign{clear:both;overflow:hidden;text-align:center;line-height:28px;font-size:30px;color:rgb(81,81,81);font-weight:bold;}
+.module_sign span{font-size:14px;color:rgb(168,168,168);}
+.module_sign i{display:block;width:50px;height:5px;background:#000;margin:10px auto 0px auto;;}
+
+.module_more{clear:both;overflow:hidden;display:block;font-size:14px;color:rgb(143,143,143);margin:10px 0px;}
+.module_more a{display:block;font-size:14px;line-height:15px;border:1px rgba(67,67,67,1) solid;width:76px;line-height:26px;border-radius:50px;text-align:center;text-transform:uppercase;transition:all 0.5s ease;}
+.module_more a:hover{text-decoration:none;background:#236FFB;color:white;border-color:white;}
+
+
+.module_sign .mkbtcx{background:url(images/mkbtcx.jpg) repeat-x 0 center; text-align:center;height:55px;}
+.module_sign .mkbtcx .biaoti{width:310px;background:#FFF;margin:0 auto;clear:both;overflow:hidden;}
+.module_sign .mkbtcx .biaoti .mkt1{font-size:50px;float:left;height:45px;line-height:45px;display:inline-block;width:150px;font-family:"Courier";text-align:right;padding:10px 10px 0 0;color:#434343}
+.module_sign .mkbtcx .biaoti .mkt2{font-size:16px;float:left;display:inline-block;height:20px;line-height:20px;width:150px;text-align:left;font-family:"Bodoni Bk BT";}
+.module_sign .mkbtcx .biaoti .mkt3{font-size:24px;float:left;display:inline-block;height:25px;line-height:25px;width:150px;text-align:left;color:#000;}
+
+
+
+.module_sign .mkbiaoti{border-bottom:1px solid #cccccc;text-align:left;}
+.module_sign .mkbiaoti .te1{font-size:20px;display:block;width:100%;line-height:20px;color:#000000;}
+.module_sign .mkbiaoti .te2{font-size:14px;display:block;width:100%;line-height:20px;}
+
+
+.module_content{padding:5px 0px;text-align:left;}
+
+.module_footer{clear:both;height:1px;overflow:hidden;background-color:#cccccc;display:none}
+.module_footer .l{float:left;}
+.module_footer .r{float:right}
+
+/*子栏目样式*/
+.lanmupage .current_location{}
+.current_location{clear:both;text-align:left;height:35px;line-height:35px;overflow:hidden;position:absolute;top:0px;left:0px;border-bottom:1px solid #cacaca;width:100%;display:none;}
+.current_location_1{float:left;}
+.current_location_2{float:right;background:#fff;padding-right:10px;display:none}
+
+.sublanmu_box{text-align:left;padding-bottom:10px;}
+.sublanmu_content{text-align:left;padding:10px 0 0 0;}
+.sublanmu_content_introduct{line-height:2.0;font-size:1.1em}
+.sublanmu_content_introduct p{margin-bottom:10px;min-height:10px}
+
+.sublanmu_page{clear:both;text-align:center;margin:15px 0 10px 0;font-size:12px;font-family:宋体;}
+.sublanmu_page a{vertical-align:middle;zoom:1;height:15px;line-height:15px;padding:2px 8px 2px 8px;border:1px solid #cccccc;}
+.sublanmu_page span.c{border:0px solid #cccccc;border-color:#999999;font-weight:bold;padding:0 2px 0 2px;}
+
+.sublanmu_pn{font-size:13px;margin:15px 0 5px 0}
+.sublanmu_pn li{color:#333;}
+
+/*评论*/
+.comments_box{text-align:left;border:1px solid #cccccc;margin:10px 5px 10px 10px;}
+.comments_box .title{padding:2px 0 0 10px;height:20px;font-weight:bold;background-color:#ececec}
+.comments_box ul li{padding:5px 0 5px 25px;}
+.comments_box .textarea{width:520px;height:100px;border:1px solid #cccccc;border-color:#000000 #cccccc #cccccc #000000;}
+
+.comments_list{padding:5px 5px 0 10px;border:0px solid #cccccc;overflow:hidden}
+.comments_list .title{display:block;padding:2px 0 3px 5px;height:18px;width:100%;font-weight:bold;}
+.comments_list .item{clear:both;margin:0 0 10px 0;overflow:hidden}
+.comments_list .header{padding:3px 0 0 10px;height:22px;background-color:#eeeeee}
+.comments_list .header .floornum{font-size:12px;font-style:Italic;font-weight:bold}
+.comments_list .header .left{float:left}
+.comments_list .header .right{float:right;padding-right:10px}
+.comments_list .quote{display:block;color:#999999;padding:5px 5px 5px 10px;border:1px solid #ececec}
+.comments_list .content{padding:5px 5px 5px 15px}
+.comments_list .reply{background:url(public/reply.gif) no-repeat 5px 5px;border:1px dashed #cccccc;padding:2px 5px 2px 25px;margin:2px 0 5px 0;color:#D33506}
+
+.comments_page{clear:both;vertical-align:middle;text-align:right;background-color:#ffffff;margin:10px 0 10px 0;font-family:宋体;}
+.comments_page a{height:15px;line-height:15px;vertical-align:middle;zoom:1;padding:2px 8px 2px 8px;border:1px solid #cccccc;font-size:12px}
+.comments_page span{vertical-align:middle;padding:2px 3px 2px 3px;font-weight:bold;font-size:12px}
+
+/*bottom样式*/
+.bottom_box{clear:both;overflow:hidden;text-align:center;padding:20px 0 0px 0;line-height:30px;color:#666666;background:#1D1D1D;}
+
+/*登陆界面*/
+.loginbox_item{height:20px;padding:0 0 0 0;padding:0 5px 5px 0;text-align:left;font-size:9pt;}
+.loginbox_textbox{width:100px;height:15px;border:0 solid #CCCCCC;border-width:1px 1px 1px 1px}
+.loginbox_textbox_yzm{width:40px;height:15px;border:0 solid #CCCCCC;border-width:1px 1px 1px 1px}
+.loginbox_submit{width:60px;height:20px;border:0 solid #333333;border-width:0 1px 1px 0;background-color:#dddddd;cursor:pointer;}
+a.logined_href:link{font-size:9pt;color:#FF0000;text-decoration:underline}
+a.logined_href:visited{font-size:9pt;color:#FF0000;;text-decoration:underline}
+a.logined_href:hover{font-size:9pt;color:#FF0000;text-decoration:underline}

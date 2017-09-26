@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta  name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>飞学教育</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="order by sucaihuo.com" />
+<script src="js/touchslide.1.1.js" type="text/javascript"></script>
+<script src="js/jq.mobi.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="js/pzinputmsg.js"></script>
+<script type="text/javascript" src="js/navslide.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script>
+            $(function () {
+                $('#tcgao').hide();
+            })
+        </script>
+<script type="text/javascript" src="js/jquery.scrollto.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#ljth_h").click(function () {
+            $.scrollTo('#ljth', 500);
+            $('#ljth').css('padding-top', '85px');
+        });
+        $("#tzln_h").click(function () {
+            $.scrollTo('#tzln', 800);
+            $('#tzln').css('padding-top', '85px');
+        });
+        $("#thyw_h").click(function () {
+            $.scrollTo('#thyw', 1000);
+            $('#thyw').css('padding-top', '85px');
+        });
+        $("#xwdt_h").click(function () {
+            $.scrollTo('#xwdt', 1200);
+        });
+       
+    });
+   
+
+</script>
+</head>
+<body style="outline: none;">
+
+<div class="pz_top" id="pz_top">
+  <div class="w_1200"
+    <div class="c_1200_1">
+      <div class="logo"><a href=""><img src="picture/logo.jpg" width="153" height="60"></a></div>
+      <div class="r_menu">
+        <div class="menu"  id="navSlide">
+          <ul>
+            <li class="nli nli_1"> <span> <a class="l1_a" href="index.html">
+              <div class="limg"><img src="picture/top_img64575469.png" width="19" height="19"></div>
+              <div class="chi">首&nbsp;&nbsp;页</div>
+              </a> </span> </li>
+            <li class="nli nli_1 " id="nav2"> <span> <a class="l1_a" href="about.html" target="_self">
+              <div class="limg"><img src="picture/top_imgt1.png" width="19" height="19"></div>
+              <div class="chi">走进我们</div>
+              </a> <b></b> </span>  </li><li class="nli nli_1 " id="nav2"> <span> <a class="l1_a" href="yewu.html" target="_self">
+              <div class="limg"><img src="picture/top_imgt2.png" width="19" height="19"></div>
+              <div class="chi">课程介绍</div>
+              </a> <b></b> </span>  </li><li class="nli nli_1 " id="nav2"> <span> <a class="l1_a" href="news.html" target="_self">
+              <div class="limg"><img src="picture/top_imgt3.png" width="19" height="19"></div>
+              <div class="chi">招商加盟</div>
+              </a> <b></b> </span>  </li><li class="nli nli_1 on" id="nav2"> <span> <a class="l1_a" href="contact.html" target="_self">
+              <div class="limg"><img src="picture/top_imgt4.png" width="19" height="19"></div>
+              <div class="chi">联系我们</div>
+              </a> <b></b> </span>  </li>
+          </ul>
+          </li>
+          <li class="nli nli_2" id="login_in"> <span> 
+            <script src="js/zhuangtai.js"></script> 
+            </span> </li>
+          </ul>
+          <script>
+                               $('#denglu').click(function () {
+                                   $('.pf_load').show();
+                               })
+                           </script> 
+        </div>
+        <div class="small_menu"> <a href="javascript:;" onclick="$('.menu,.cha').show(200);"><img src="picture/top_img4.jpg" width="48" height="46"></a> <a class="cha" href="javascript:;" onclick="$('.menu,.cha').hide(200);"><img src="picture/top_img5.jpg" width="48" height="46"></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width:100%;float:left;" id="tcgao"></div>
+<div class="pz_banner"> 
+  <!--pcbanner开始-->
+  <div style="height:504px; position: relative;" class="banner_box_pc">
+    <div style="position: absolute; left: 50%; margin-left: -960px; top: 0; width:1920px;">
+      <div style="width:1920px; height:504px;">
+        <div id="mapall" style="width:100%;height:100%;"></div>
+        <script type="text/javascript" src="js/ef988ee59aa34e0cb703ebd011030c9e.js"></script> 
+        <script>
+    $(function () {
+        drawbaidumap();
+        $(window).resize(function () {
+            drawbaidumap();
+        });
+    });
+    function drawbaidumap() {
+        //地图适应高度
+        var winheight = $(window).height();
+        //$(".contactnei").height(winheight-120);
+        //$("#mapall").height(winheight-20);
+
+        var map = new BMap.Map("mapall");
+        var point = new BMap.Point(120.971299,31.388291);
+        map.centerAndZoom(point, 15);
+        var mapStyle = { style: "dark" };
+        map.setMapStyle(mapStyle);
+        map.addControl(new BMap.NavigationControl());
+        var pt = new BMap.Point(120.971299,31.388291);
+        var icon = new BMap.Icon("images/marker.png", new BMap.Size(50, 50), { 'anchor': new BMap.Size(20, 60) });
+        var marker = new BMap.Marker(pt, { icon: icon });
+        map.addOverlay(marker);
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    }
+</script> 
+      </div>
+    </div>
+    <div class="c_0100_1">
+      <div class="w_1200">
+        <div class="pz_SideLayer" id="pcleft">  </div>
+      </div>
+    </div>
+    <script>
+            var btn = 1200 - $(".c_0100_1 .pz_SideLayer").width();
+            var btnl = btn / 2;
+            $(".c_0100_1 .pz_SideLayer").css("margin-left", btnl + "px");
+		      </script> 
+  </div>
+  <!--pcbanner结束--> 
+  <!--padbanner开始-->
+  
+  <div style="position: absolute; left: 50%; margin-left: -500px; top: 0;">
+    <div class="c_0100_2">
+      <div class="w_1200">
+        <div class="pz_SideLayer">  </div>
+      </div>
+      <script>
+                var btn = 1000 - $(".c_0100_2 .pz_SideLayer").width();
+                var btnl = btn / 2;
+                $(".c_0100_2 .pz_SideLayer").css("margin-left", btnl + "px");
+		      </script> 
+    </div>
+  </div>
+  <!--padbanner结束--> 
+  <!--phonebanner开始-->
+  <div id="slideBox" class="banner_box_phone"> 
+    
+    <!--phonebanner结束--> 
+  </div>
+</div>
+<script>
+    $('#left20').addClass('hover');
+    $('#left220').addClass('hover');
+</script>
+<div class="pz_main" style="background-color:#f6f6f6;">
+  <div class="w_1200">
+    <div class="c_0100_3 kuan1">
+      <div class="pz_SideLayer_phone">  </div>
+      <script>
+            	    $('#left320').addClass('hover');
+            	    var btn = $(".c_0100_3").width() - $(".c_0100_3 .pz_SideLayer_phone").width();
+            	    var btnl = btn / 2;
+            	    $(".c_0100_3 .pz_SideLayer_phone").css("margin-left", btnl + "px");
+		      </script> 
+    </div>
+  </div>
+  <div class="w_1200">
+    <div class="c_1200_7">
+      <div class="title_4">
+        <div class="m_tit_con"> <span>加盟联系方式</span>
+          <div class="tit_eng">
+            <div class="engcon"> Contact Us </div>
+          </div>
+        </div>
+        <script>
+                    var btn = $(".title_4").width() - $(".title_4 .m_tit_con").width();
+                    var btnl = btn / 2;
+                    $(".title_4 .m_tit_con").css("margin-left", btnl + "px");
+		      </script> 
+      </div>
+      <div class="t_1200_18">
+       
+        <div class="t_1200_11">
+          <div class="title_5">各校区联系方式</div>
+          <div class="tt_1200_1">
+            <div class="ul_cont">
+              <div class="li_cont">
+                <div class="tit_cont">南京龙江校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：025-86200550</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>草场门大街101号文荟大厦门楼A座 </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="li_cont">
+                <div class="tit_cont">南京珠江路校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：025-84701215</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>珠江路88号新世界中心B座37楼3701室</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="li_cont">
+                <div class="tit_cont">南京常府街校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>联系电话：025-84292055</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>常府街校区常府街85号新大都广场乙座26楼</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="ul_cont">
+              <div class="li_cont">
+                <div class="tit_cont">昆山校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0512-36832591</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>昆山市柏前街9号</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="li_cont">
+                <div class="tit_cont">常州钟楼校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0519-86888972</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>勤业路104号(江南农村商业银行旁边)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="li_cont">
+                <div class="tit_cont">常州武进校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0519-81883708</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>常武北路137号(富克斯广场北100米)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="ul_cont">
+              <div class="li_cont">
+                <div class="tit_cont">常州新北校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0519-83986560</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>晋陵北路中央花园西门商铺8-11(建行南50米)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               <div class="li_cont">
+                <div class="tit_cont">常州天宁校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0519-86633101</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>晋陵北路400号路桥嘉乐广场B座8楼</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+               <div class="li_cont">
+                <div class="tit_cont">镇江校区</div>
+                <div class="text_cont">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr class="firstRow">
+                        <td width="25"><img src="picture/contact_img8.png" height="14" width="15"/></td>
+                        <td>教育热线：0511-85019318</td>
+                      </tr>
+                      <tr>
+                        <td><img src="picture/contact_img9.png" height="17" width="13"/></td>
+                        <td>中山东路68号嘉源大厦7楼</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/HaiBao/联系我们.jpg" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+            $("#nav8").addClass("on");
+ </script> 
+
+<div class="pz_down"> 
+  <!--底部开始手机用另外一个底-->
+  <div class="w_0100 c_0100_bg4">
+    <div class="w_1200">
+      <div class="c_1200_5">
+        <div class="t_1200_5">
+          <div class="l_790">  <a href="about.html" target="_self">走进我们</a>  <a href="yewu.html" target="_self">课程介绍</a>  <a href="news.html" target="_self">招商加盟</a>  <a href="contact.html" target="_self">联系我们</a>  </div>
+          <div class="r_215">
+           <div class="pz_select_2"  > <span>官网链接</span>
+              <ul>
+             
+                <li class="option"><a href="http://www.fxjy100.com/ " target="_blank">飞学教育</a> </li>
+                
+              </ul>
+              <input name="ShowType" id="ShowType" type="hidden" value="" />
+            </div>
+            <script>
+                        var xl = $(".r_215 .pz_select_2");
+                        $(xl).click(function () {
+                            var yc = $(this).children("ul").css("display");
+                            if (yc == "none") {
+                                $(".r_215 .pz_select_2 ul").hide();
+                                $(this).children("ul").show();
+                                $(".pf_xl").show();
+                            } else { $(this).children("ul").hide(); $(".pf_xl").hide(); }
+                        })
+
+					</script> 
+          </div>
+        </div>
+        <div class="t_1200_6">
+          <div class="l_790_2">
+            <p> 全国免费咨询电话：400-025-8960 <br/>
+              公司名称<span>：</span>飞学教育<br/>
+              &nbsp;公司地址<span>：</span>昆山市柏前街9号<br/>
+              版权所有:Copyright &copy; 飞学教育  版权所有 </p>
+          </div>
+          <div class="r_105">
+            <div class="weixin"> <a href="#" class="dbg1" style="position:relative; z-index:1;">
+              <div class="pf_wx">
+                <div class="wximg">
+                  <p><img src="picture/6358034065306001681703050.jpg" height="97" width="99" title="down_img7.jpg"/></p>
+                </div>
+              </div>
+              </a> </div>
+        
+            <div class="fenxiang"><a href="http://www.fxjy100.com" target="_blank"
+             id="bshare-shareto" class="dbg3 jiathis"  target="_blank"  ></a></div>
+            <script type="text/javascript" src="js/jia.js" charset="utf-8"></script></div>
+        </div>
+      </div>
+      <!--手机版底部-->
+      <div class="c_1200_6">
+        <div class="t_0100_5">  <a href="about.html" target="_self">走进我们</a>  <a href="yewu.html" target="_self">课程介绍</a>  <a href="news.html" target="_self">招商加盟</a>  <a href="contact.html" target="_self">联系我们</a>  </div>
+        <div class="t_0100_6">
+          <div class="l_45">
+           <div class="pz_select_3"  > <span>官网链接</span>
+              <ul>
+             
+                <li class="option"><a href="http://www.fxjy100.com/ " target="_blank">飞学教育</a> </li>
+                
+              </ul>
+              <input name="ShowType" id="ShowType" type="hidden" value="" />
+            </div>
+            <script>
+						    var xl = $(".l_45 .pz_select_3");
+						    $(xl).click(function () {
+						        var yc = $(this).children("ul").css("display");
+						        if (yc == "none") {
+						            $(".l_45 .pz_select_3 ul").hide();
+						            $(this).children("ul").show();
+						            $(".pf_xl").show();
+						        } else { $(this).children("ul").hide(); $(".pf_xl").hide(); }
+						    })
+                        </script> 
+          </div>
+          <div class="l_105">
+            <div class="weixin"> <a href="#" class="dbg1" style="position:relative; z-index:1;">
+              <div class="pf_wx">
+                <div class="wximg">
+                  <p><img src="picture/6358034065306001681703050.jpg" height="97" width="99" title="down_img7.jpg"/></p>
+                </div>
+              </div>
+              </a> </div>
+         
+            <div class="fenxiang"><a href="http://www.fxjy100.com" target="_blank" id="bshare-shareto" class="dbg3 jiathis"  target="_blank"  ></a></div>
+            <script type="text/javascript" src="js/jia.js" charset="utf-8"></script> 
+          </div>
+        </div>
+        <div class="t_0100_7">
+          <p>Copyright &copy; 飞学教育 版权所有<br/>
+            全国免费咨询电话：400-025-8960 &nbsp;公司地址<span>：</span>昆山市柏前街9号</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html> 
